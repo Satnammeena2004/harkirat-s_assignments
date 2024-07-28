@@ -5,8 +5,18 @@
   Once you've implemented the logic, test your code by running
 */
 
+const vowels = ['a', 'e', 'i', 'o', 'u']
 function countVowels(str) {
-    // Your code here
+  let count =0;
+    str.toLowerCase().split("").map((char)=>{
+       if(vowels.includes(char)){
+          count++;
+       }
+    })
+
+    return count;
 }
+
+console.log(countVowels("satnAm"))
 
 module.exports = countVowels;
