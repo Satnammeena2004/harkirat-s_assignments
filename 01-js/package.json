@@ -6,6 +6,9 @@
   "directories": {
     "test": "tests"
   },
+  "scripts": {
+    "file" :"node easy/findLargestElement.js"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC"
