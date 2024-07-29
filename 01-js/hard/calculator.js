@@ -16,6 +16,64 @@
   Once you've implemented the logic, test your code by running
 */
 
-class Calculator {}
+class Calculator {
+  constructor(){
+     this.result = 0;
+  }
+
+  add(num){
+    if(typeof num ==="number"){
+      this.result = this.result+num;
+      return this.result
+
+    }else{
+      return "not valid number"
+    }
+  }
+  subtract(num){
+    if(typeof num ==="number"){
+      this.result = this.result-num;
+      return this.result
+
+    }else{
+      return "not valid number"
+    }
+  }
+  divide(num){
+    if(typeof num ==="number"){
+      this.result = this.result/num;
+      return this.result
+
+    }else{
+      return "not valid number"
+    }
+  }
+  multiply(num){
+    if(typeof num ==="number"){
+      this.result = this.result*num;
+      return this.result
+
+    }else{
+      return "not valid number"
+    }
+  }
+
+  clear(){
+    this.result = 0;
+    return "Cleared !"
+  }
+  getResult(){
+    return this.result;
+  }
+  calculate(e){
+    return  eval(e)
+      
+  }
+ 
+}
+
+const c = new Calculator();
+
+
 
 module.exports = Calculator;
